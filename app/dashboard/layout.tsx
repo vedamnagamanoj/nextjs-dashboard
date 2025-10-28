@@ -1,6 +1,6 @@
-import SideNav from "@/app/ui/dashboard/sidenav";
+"use cache";
 
-export const experimental_ppr = true;
+import SideNav from "@/app/ui/dashboard/sidenav";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
