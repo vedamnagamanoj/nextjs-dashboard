@@ -24,7 +24,7 @@ const UpdateInvoice = FormSchema.omit({ id: true, date: true });
 
 export type State = {
   message?: string | null;
-  errors?: { customerId?: string[]; amount?: string[]; status?: string };
+  errors?: { customerId?: string[]; amount?: string[]; status?: string[] };
 };
 
 const sql = postgres(process.env.POSTGRES_URL!, { ssl: "require" });

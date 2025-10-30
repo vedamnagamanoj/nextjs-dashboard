@@ -17,11 +17,11 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
   //   const message = await createInvoice(formData);
   //   if (message) console.log(message);
   // };
+
   const initialState: State = {
     message: null,
     errors: {},
   };
-
   const [state, formAction] = useActionState(createInvoice, initialState);
 
   return (
